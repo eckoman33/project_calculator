@@ -13,12 +13,11 @@
 }
 
 
-header {
+.title {
     font-size: 18px;
     font-weight: normal;
-    color: #1863af;
-
-    margin-bottom: 40px;
+    color: #b5b6e4;
+    margin-bottom: 30px;
 }
 
 
@@ -30,7 +29,7 @@ main {
 }
 
 .calc-container {
-    background-color: #aa8d4b;
+    background-color: #cec9cc;
     width: 450px;
     height: 500px;
 
@@ -40,12 +39,12 @@ main {
     flex-direction: column;
     justify-content: start;
     box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
+  0 2.8px 2.2px rgba(33, 26, 33, 0.5),
+  0 6.7px 5.3px rgba(206, 201, 204, 1),
+  0 12.5px 10px rgba(144, 138, 153, 0.8),
+  0 22.3px 17.9px rgba(79, 67, 174, 0.9),
+  0 41.8px 33.4px rgba(181, 182, 228, 0.7),
+  0 100px 80px rgba(0, 0, 0, 0.3)
 ;
 }
 
@@ -77,9 +76,9 @@ main {
 }
 
 .calc-container .display-container .display#middle {
-    border-bottom: 1px solid #0a2847;
+    border-bottom: 1px solid #4f43ae;
     font-size: 20px;
-    color: #0a2847;
+    color: #4f43ae;
 }
 
 .calc-container .buttons-container {
@@ -116,10 +115,10 @@ main {
 .operator#oprDot { grid-area: opDot; }
 .operator#oprPlusMinus { grid-area: opPlMi; }
 .operator#oprSqroot { grid-area: opSq; }
-.operator#oprEqual { grid-area: opEq; color: #aa8d4b; box-shadow: 2px 2px white;  }
+.operator#oprEqual { grid-area: opEq; color: #b5b6e4; box-shadow: 2px 2px #4f43ae;  }
 
 .calc-container .buttons-container button {
-    background-color: #2d363e;
+    background-color: #211a21;
     border-radius: 8px;
     border: none;
 
@@ -131,7 +130,7 @@ main {
 
 .calc-container .buttons-container button:hover,
 .calc-container .buttons-container button.active {
-    background-color: black;
+    background-color: #908a99;
 }
 
 .calc-container .buttons-container .number {
@@ -141,5 +140,9 @@ main {
 
 .calc-container .buttons-container .operator {
     box-shadow: 2px 2px #ffffff;
-    color: #1863af;
+    color: #b5b6e4;
+}
+
+footer {
+  margin-top: 150px;
 }
