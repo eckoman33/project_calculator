@@ -1,0 +1,137 @@
+#page-home {
+    background-color: #ffffff;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+header {
+    font-size: 18px;
+    font-weight: normal;
+    color: #1863af;
+
+    margin-bottom: 40px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-container {
+    background-color: #aa8d4b;
+    width: 450px;
+    height: 500px;
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.calc-container .display-container {
+    background-color: #EEEEEE;
+    width: auto;
+    height: 120px;
+
+    margin: 20px 20px;
+    border-radius: 8px;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.calc-container .display-container .display {
+    background-color: #EEEEEE;
+    height: 40px;
+
+    margin: 0 20px;
+    padding: 15px 0 0;
+
+    justify-content: center;
+    text-align: right;
+}
+
+.calc-container .display-container .display#middle {
+    border-bottom: 1px solid #0a2847;
+    font-size: 20px;
+    color: #0a2847;
+}
+
+.calc-container .buttons-container {
+    margin: 0 20px 20px;
+    height: 100%;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, minmax(10px, 1fr));
+    grid-template-rows: repeat(4, minmax(30px, 1fr));
+    grid-template-areas:
+        "num7 num8 num9 opDi opCe"
+        "num4 num5 num6 opMu opSq"
+        "num1 num2 num3 opMi opEq"
+        "num0 opDot opPlMi opPl opEq"
+    ;
+}
+
+.number#num0 { grid-area: num0; }
+.number#num1 { grid-area: num1; }
+.number#num2 { grid-area: num2; }
+.number#num3 { grid-area: num3; }
+.number#num4 { grid-area: num4; }
+.number#num5 { grid-area: num5; }
+.number#num6 { grid-area: num6; }
+.number#num7 { grid-area: num7; }
+.number#num8 { grid-area: num8; }
+.number#num9 { grid-area: num9; }
+.operator#oprCe { grid-area: opCe; }
+.operator#oprDiv { grid-area: opDi; }
+.operator#oprMult { grid-area: opMu; }
+.operator#oprMinus { grid-area: opMi; }
+.operator#oprPlus { grid-area: opPl; }
+.operator#oprDot { grid-area: opDot; }
+.operator#oprPlusMinus { grid-area: opPlMi; }
+.operator#oprSqroot { grid-area: opSq; }
+.operator#oprEqual { grid-area: opEq; color: #aa8d4b; box-shadow: 2px 2px white;  }
+
+.calc-container .buttons-container button {
+    background-color: #2d363e;
+    border-radius: 8px;
+    border: none;
+
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.calc-container .buttons-container button:hover,
+.calc-container .buttons-container button.active {
+    background-color: black;
+}
+
+.calc-container .buttons-container .number {
+    /* border: 1px solid white; */
+    box-shadow: 2px 2px #EEEEEE7f;
+}
+
+.calc-container .buttons-container .operator {
+    box-shadow: 2px 2px #ffffff;
+    color: #1863af;
+}
