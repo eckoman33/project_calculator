@@ -12,6 +12,9 @@
     font-family: 'Press Start 2P', cursive;
 }
 
+@media screen and (max-width: 480px) {
+  /* CSS Code for when the screen size is 480px Screen size */
+}
 
 .title {
     font-size: 18px;
@@ -28,12 +31,6 @@ main {
     align-items: center;
 }
 
-/* Media query for breakpoint at 800px: */
-@media screen and (max-width: 800px) {
-  header,main,footer,button {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
 
 .calc-container {
     background-color: #cec9cc;
