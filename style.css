@@ -12,9 +12,6 @@
     font-family: 'Press Start 2P', cursive;
 }
 
-@media screen and (max-width: 480px) {
-  /* CSS Code for when the screen size is 480px Screen size */
-}
 
 .title {
     font-size: 18px;
@@ -149,4 +146,8 @@ main {
 
 footer {
   margin-top: 150px;
+}
+
+@media screen and (max-width: 480px) {
+  /* CSS Code for when the screen size is 480px Screen size */
 }
